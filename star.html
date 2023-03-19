@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c938b4496b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(49, 44, 44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div{
+            border: 2px solid rgb(182, 157, 157);
+            position: relative;
+            height: 100px;
+            width: 40rem;
+            height: 200px;
+            /* padding: 40px; */
+            padding-left: 50px;
+            padding-top: 45px;
+        }
+        h1{
+            color: whitesmoke;
+            margin-bottom: 20px;
+        }
+        span{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            /* background-color: black;
+            border: 1px solid black; */
+            margin-left: 10px;
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+        }
+        span i{
+            font-size: 40px;
+            color: white;
+            transform-style: preserve-3d;
+        }
+        .zoom{
+            animation: stars 2s ease-in-out ;
+            transform-style: preserve-3d;
+            /* transform: perspective(200px); */
+        }
+        @keyframes stars {
+            0%{
+                transform: scale(0);
+            }
+            20%{
+                transform: scale(1.1);
+            }
+            40%{
+                transform: scale(1.2);
+            }
+            60%{
+                transform: scale(1.1);
+            }
+            80%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.5) perspective(500px) rotate(360deg);
+            }
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>please rate our services</h1>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+        <span><i class="fa-solid fa-star"></i></span>
+    </div>
+
+    <script>
+        let span = document.querySelectorAll('span i')
+
+        span.forEach((s,i) =>{
+            s.addEventListener('click',()=>{
+                console.log(i);
+                // s.style.background='black'
+                // s.style.background='yellow'
+                span.forEach(sp =>{
+                    sp.style.color='red'
+                })
+                
+                for (let index = 0; index <= i; index++) {
+                    const element = span[index];
+                    element.style.color= 'yellow';
+                    element.classList.add('zoom')
+
+                    setTimeout(()=>{
+                        element.classList.remove('zoom')
+                    },2000)
+                    
+                }
+            })
+        })
+    </script>
+</body>
+</html>

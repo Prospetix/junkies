@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food store</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="nav">
+        <h1>homely</h1>
+        <div class="toggle" id="toggle">
+            <span></span>
+        </div>
+
+        <div class="section" id="section">
+            <div class="link">
+                <h4>contact</h4>
+                <h4>about</h4>
+                <h4 id="user">sign up</h4>
+               
+            </div>
+            <div class="cart" id="cart">
+                <h3><i class="fa-solid fa-cart-plus"></i></h3>
+                <h2 id="cartNum">0</h2>
+            </div>
+        </div>
+    </div>
+
+    <h2 id="username"></h2>
+
+    <div class="over" id="over">
+        
+        <div class="Addcart">
+            <h1 style="color: black" id="empty">cart is empt</h1>
+
+            <div id="newitems">
+                
+            </div>
+
+            <div class="total">
+                <h2 >TOTAL Amount</h2>
+                <h1><span>$</span><span id="total">0.00</span></h1>
+            </div>
+            
+        </div>
+        <button id="close">close</button>
+            
+    </div>
+
+    <div class="userdetailsection" id="page">
+        <div class="switch">
+            <span id="signup">sign up</span>
+            <span id="login">login</span>
+        </div>
+        <hr>
+        <div id="closepage">close</div>
+        <div class="cont" id="cont">
+            <div class="signup" id="sign">
+                <input type="text" name="" id="" placeholder="username">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <input type="password" placeholder="repeat-password">
+                <button id="sendsign">signup</button>
+            </div>
+            <div class="login" id="log">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <button id="sendlogin">login</button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    <div class="foodblock">
+        <div class="card">
+            <img src="./pictures/jollof rice.jpg" alt="">
+            <span class="food">rice with plantain</span>
+            <div class="details">
+                <div>
+                    <span>$</span><span id="price">20</span>
+                </div>
+                <div>
+                    <input type="text" value="1" class="text" id="text"  readonly data-id="0">
+                   <input type="button" value="+  add" class="btn" id="btn" data-id="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pictures/mea.jpg" alt="">
+            <span class="food">rice and chicken</span>
+            <div class="details">
+                <div>
+                    <span>$</span><span id="price">80</span>
+                </div>
+                <div>
+                    <input type="text" value="1" class="text" id="text" readonly data-id="0">
+                   <input type="button" value="+  add" class="btn" id="btn" data-id="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pictures/snacks.jpg" alt="">
+            <span class="food">meat pie</span>
+            <div class="details">
+                <div>
+                    <span>$</span><span id="price">2</span>
+                </div>
+                <div>
+                    <input type="text" value="1" class="text" id="text" readonly data-id="0">
+                   <input type="button" value="+  add" class="btn" id="btn" data-id="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pictures/soup.jpg" alt="">
+            <span class="food">soup</span>
+            <div class="details">
+                <div>
+                    <span>$</span><span id="price">20</span>
+                </div>
+                <div>
+                    <input type="text" value="1" class="text" id="text" readonly data-id="0">
+                   <input type="button" value="+  add" class="btn" id="btn" data-id="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./pictures/plantain.jpeg" alt="">
+            <span class="food">plantain</span>
+            <div class="details">
+                <div>
+                    <span>$</span><span id="price" >5</span>
+                </div>
+                <div>
+                    <input type="text" value="1" class="text" id="text" readonly data-id="0">
+                   <input type="button" value="+  add" class="btn" id="btn" data-id="0">
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">this footer was copied and pasted from codepen <br><i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/c938b4496b.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        
+        let btns = document.querySelectorAll('#btn')
+        let cartNum = document.getElementById("cartNum")
+        let cart = document.getElementById('cart')
+        let over = document.getElementById('over')
+        let newitems = document.getElementById('newitems')
+        let total = document.getElementById('total')
+        let toggle = document.getElementById('toggle')
+        let section = document.getElementById('section')
+        let closeNow = document.getElementById('close')
+        let price;
+        let howmany
+        let dat;
+        let user = document.getElementById('user')
+        let login = document.getElementById('login')
+        let signup = document.getElementById('signup')
+        let log = document.getElementById('log')
+        let sign = document.getElementById('sign')
+        let cont = document.getElementById('cont')
+        let x = document.getElementById('closepage')
+        let page = document.getElementById('page')
+        let hr = document.querySelector('hr')
+        let sendsign = document.getElementById('sendsign')
+        let sendlogin = document.getElementById('sendlogin')
+        let username = document.getElementById('username')
+       let userDetails = []
+
+       let moveToLogin = ()=>{
+            sign.style.transform = "translateX(-300px)"
+            log.style.transform = "translateX(-300px)"
+            hr.style.transform = 'translateX(87px)'
+       }
+
+       let moveTosigns = ()=>{
+            log.style.transform= "translateX(300px)"
+            sign.style.transform = "translateX(0px)"
+            hr.style.transform = 'translateX(-72px)'
+       }
+       
+
+        login.addEventListener('click',moveToLogin)
+
+        signup.addEventListener('click',moveTosigns)
+        
+        x.addEventListener('click',()=>{
+            page.style.display = "none"
+        })
+
+        user.addEventListener('click',()=>{
+            page.style.display ="flex"
+            username.innerHTML = ""
+            document.getElementById('user').innerHTML = 'SIGN UP';
+            document.getElementById('user').style.color = 'black'
+        })
+
+        sendlogin.addEventListener('click',(e)=>{
+            
+            let email = e.target.parentNode.children[0].value
+            let password = e.target.parentNode.children[1].value
+            
+
+
+            if (userDetails.length === 0) {
+                Swal.fire({
+                    icon: 'error',
+                    text: `no user found`,
+                    // text: 'fill the form!',
+                })
+                return;
+            }
+
+            if (userDetails.length >= 1) {
+                for (user of userDetails) {
+                    if (user.email !== email) {
+                        moveTosigns()
+                        swal("user not found", "please REGISTER!", "error");
+
+                    }else if (user.email === email ) {
+                        if (user.password !== password) {
+                            swal("check password", "password in-correct", "error");
+                        }
+                        if (user.password === password) {
+                            console.log(user.name); 
+                            username.innerHTML = `welcome back, ${user.name}`;
+                            page.style.display="none"
+                            swal("GOOD JOB", `welcome back ${user.name}`, "sucess");
+                            document.getElementById('user').innerHTML = 'LOG OUT';
+                            document.getElementById('user').style.color = 'red'
+                        }
+                       
+
+                        
+                    }
+                }
+            }
+            
+            console.log('fghj');
+        })
+
+        sendsign.addEventListener('click',(e)=>{
+            let name = e.target.parentNode.children[0].value
+            let email = e.target.parentNode.children[1].value
+            let password = e.target.parentNode.children[2].value
+            let repeatPassword = e.target.parentNode.children[3].value
+
+            if (email === "" || password === "" || repeatPassword === "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'please...',
+                    text: 'fill the form!',
+                })
+
+                return
+            }
+
+            if (name.length < 5) {
+                e.target.parentNode.children[0].placeholder = "name must be longer than 5"
+                e.target.parentNode.children[0].value = ""
+                e.target.parentNode.children[0].style.borderColor = 'red' 
+                Swal.fire({
+                    icon: 'error',
+                    title: "your password must be longer than 5",
+                    // text: 'fill the form!',
+                    // timer: 1500
+                })
+                return
+            }
+           
+            if (password !== repeatPassword) {
+                Swal.fire({
+                    icon: 'error',
+                    title: "your password doesn't match",
+                    // text: 'fill the form!',
+                })
+                return
+            }
+            let signUpDetails =
+                {
+                    name: name,
+                    email: email,
+                    password : password,
+                    repeatPassword: repeatPassword
+                }
+            
+            
+            if (userDetails.length > 0) {
+                for ( user of userDetails) {
+                    if (user.email === signUpDetails.email) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'user already exist',
+                            text: 'please login',
+                            
+                        })
+                        moveToLogin()
+                        return
+                    }
+                 }
+                 
+            }
+            userDetails.push(signUpDetails)
+            username.innerHTML = `welcome ${name}`;
+            page.style.display="none"
+            Swal.fire(
+                'Good job!',
+                'successfully resgistered!',
+                'success'
+            )
+            document.getElementById('user').innerHTML = 'LOG OUT';
+            document.getElementById('user').style.color = 'red'
+            console.log(userDetails);
+        })
+
+
+
+
+
+
+
+
+
+
+        //add event to thr toggle and close buttons
+        toggle.addEventListener('click',()=>{
+            section.classList.toggle('height')
+        })
+        closeNow.addEventListener('click',()=>{
+            over.classList.remove('show')
+        })
+
+        //creating random variables to store data
+        let know = 0
+        let check = false;
+        let unit;
+        let c = 0;
+
+        //adding event to the add button to push items to the cart
+        btns.forEach(btn => {
+            btn.addEventListener('click',(e)=>{
+
+             
+                let date = Date.now()
+                let parentPrice = e.target.parentNode.parentNode;
+                price = e.target.parentNode.parentNode.children[0].children[1].innerHTML;
+                let parentName = parentPrice.parentNode.children[1].innerHTML;
+                unit = parentPrice.children[1].children[0]
+                let num;
+              
+
+                if (+e.target.dataset.id === know) {
+                    c = 0
+                    newitems.classList.remove('off')
+                    check = true;
+                    console.log(know);
+                    c++
+                    unit.dataset.id = c;
+                   window.navigator.vibrate(700)
+               
+                    
+                    cartNum.innerHTML =  +unit.value + +cartNum.innerHTML
+                    cart.classList.add('bounce')
+                        
+                    setTimeout(()=>{
+                        cart.classList.remove('bounce')
+                    },1000)
+
+                    document.getElementById('empty').style.display = 'none'
+
+                   newitems.innerHTML += `
+                        <div id="${parentName}" class="newitem" data-id="${check}">
+                            <div class="item">
+                                <span id="n">${parentName}</span>
+                                <span class="howmany" id=${parentName}>${+unit.dataset.id}</span>
+                                <span>$</span>
+                                <span id="price">${price}</span>
+                            </div>
+                            <div class="adding">
+                                <span id="plus" data-id="${date}">+</span>
+                                <span id="minus" data-id="${date}">-</span>
+                            </div>
+                        </div>
+                    `
+                
+                    total.innerHTML = (+price * +unit.value)+ +total.innerHTML; 
+                    +e.target.dataset.id++
+                    
+
+                    Swal.fire({
+                        // width: 200,
+                        icon: 'success',
+                        title: 'added item to the cart',
+                        showConfirmButton: false,
+                        timer: 1000
+                    })
+                    
+                }else if (+e.target.dataset.id === 1) {
+
+                    let date = Date.now()
+                    let parentPrice = e.target.parentNode.parentNode;
+                    price = e.target.parentNode.parentNode.children[0].children[1].innerHTML;
+                    let parentName = parentPrice.parentNode.children[1].innerHTML;
+                    c++
+                    console.log(e.target.parentNode.parentNode.children[1].children[0].value);
+                    window.navigator.vibrate(700)
+                    // unit.dataset.id = c
+                    cartNum.innerHTML = +cartNum.innerHTML + +unit.value;
+                    cart.classList.add('bounce')
+                    total.innerHTML = (+price * +unit.value)+ +total.innerHTML; 
+
+                    document.getElementById('empty').style.display = 'none'
+                    setTimeout(()=>{
+                        cart.classList.remove('bounce')
+                    },1000)
+
+                    let count = parentPrice.children[1].children[0].value
+                   let newcount = document.getElementById(`${parentName}`).querySelector('.howmany').innerHTML
+                    console.log(+newcount++);
+                    document.getElementById(`${parentName}`).innerHTML =`
+
+                        <div class="item">
+                            <span id="n">${parentName}</span>
+                            <span class="howmany" id=${parentName}>${+newcount++}</span>
+                            <span>$</span>
+                            <span id="price">${price}</span>
+                        </div>
+
+                        <div class="adding">
+                            <span id="plus" data-id="${date}">+</span>
+                            <span id="minus" data-id="${date}">-</span>
+                        </div>
+                    `
+                    document.getElementById(`${parentName}`).style.display="flex"
+
+                    Swal.fire({
+                        // width: 200,
+                        icon: 'success',
+                        title: 'added item to the cart',
+                        showConfirmButton: false,
+                        timer: 1000
+                    })
+                    
+                }
+                
+                let plus = document.querySelectorAll('#plus')
+                let minus = document.querySelectorAll('#minus')
+                minus.forEach(m =>{
+                    m.addEventListener('click',godown)
+                })
+                plus.forEach(p =>{
+                    p.addEventListener('click',goup)
+                })
+                
+
+            })
+        })
+        
+        
+        //ading event to the cart button to show the cart to the user
+            cart.addEventListener('click',()=>{
+            over.classList.toggle('show')
+            plus = document.getElementById('plus')
+            minus = document.getElementById('minus')
+            window.navigator.vibrate(700)
+        })
+        
+        //adding event to the each of the minus button of each item in the cart
+        function godown(e) {
+          
+            cartNum.innerHTML--
+            c--
+            unit.dataset.id = c
+        
+            
+            
+            let increments = e.target.parentNode.parentNode.children[0].children[1]
+            increments.innerHTML--
+            console.log(e.target.parentNode.parentNode.children[0].children[1]);
+            let newp = e.target.parentNode.parentNode.children[0].parentNode.children[0].children[3]
+            cart.classList.add('bounce')
+            setTimeout(()=>{
+                cart.classList.remove('bounce')
+            },1000)
+            console.log('huuh');
+
+            if (+increments.innerHTML < 1) {
+                // minus.removeEventListener("click",godown)
+                let ids = e.target.parentNode.parentNode.children[0].parentNode.id;
+                document.getElementById(`${ids}`).style.display="none"
+                console.log('okk');
+            }
+            if (cartNum.innerHTML === "0") {
+                over.classList.remove('show')
+                minus.removeEventListener("click",godown)
+                document.getElementById('empty').style.display = 'inline-block'
+                let id = e.target.parentNode.parentNode.children[0].parentNode.id;
+                document.getElementById(`${id}`).style.display="none"
+                
+            }
+            total.innerHTML = Math.abs( +newp.innerHTML - +total.innerHTML) 
+        }
+
+        //adding event to each of the plus button to increase the number of the item and price 
+        function goup(e) {
+            let newp = e.target.parentNode.parentNode.children[0].parentNode.children[0].children[3]
+           
+            cartNum.innerHTML++
+            c++
+            unit.dataset.id = c
+            total.innerHTML = +newp.innerHTML + +total.innerHTML
+            
+            let increment = e.target.parentNode.parentNode.children[0].children[1]
+            increment.innerHTML++
+            console.log(increment);
+            cart.classList.add('bounce')
+            setTimeout(()=>{
+                cart.classList.remove('bounce')
+            },1000)
+            console.log('huuh');
+         }
+        
+    </script>
+</body>
+</html>
